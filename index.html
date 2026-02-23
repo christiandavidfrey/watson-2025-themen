@@ -168,6 +168,17 @@
       body > .wrap{ display:none !important; }
     }
 
+
+
+        /* Standard: Hinweis versteckt, Plot sichtbar */
+.plot-too-small{ display:none; }
+
+/* Wenn die Viewport-HÖHE zu klein wird */
+@media (max-height: 420px){
+  #topics-viz{ display:none; }
+  .plot-too-small{ display:block; }
+}
+
     /* --- Plot Interaction Layer --- */
     .viz-wrap{
       position:relative;
